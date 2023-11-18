@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/form.css" />
+    <script defer src="js/ibg.js"></script>
+    <title>Login</title>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <div class="wrapper__column">
+        <form class="form">
+          <div class="form__header-row">
+            <h1 class="form__header">Login</h1>
+            <a class="form__home" href="index.html">
+              <img src="img/home.png" alt="home" />
+              <p>Back to home</p>
+            </a>
+          </div>
+          <h2 class="form__subtitle">Login and have more fun</h2>
+          <div class="form__inputs form__inputs_l">
+            <input
+              required
+              class="form__username text-input"
+              placeholder="Username"
+              type="text"
+              name="username"
+              id="username"
+            />
+            <input
+              required
+              class="form__password text-input"
+              placeholder="Password"
+              type="password"
+              name="password"
+              id="password"
+            />
+          </div>
+          <div class="form__remember-me">
+            <input type="checkbox" name="remember" value="remember" id="remember" />
+            <label for="remember">Remember me</label>
+          </div>
+          <button type="submit" class="form__btn">Login</button>
+          <div class="form__switch-page form__switch-page_l">
+            Don't have an account? <a href="register.html">Register</a>
+          </div>
+        </form>
+      </div>
+      <div class="wrapper__column">
+        <div class="ibg">
+          <img src="img/login-bg.jpg" alt="" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
