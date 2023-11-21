@@ -1,0 +1,61 @@
+.recent-posts{
+    @include container;
+    &__box{
+        display: flex;
+        gap: 30px;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        
+    }
+    margin-bottom: 92px;
+}
+
+.post{
+    width: 370px;
+    box-shadow: 5px 8px 3px rgba(0, 0, 0, 0.25);
+    padding: 20px 15px;
+    &-top{
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &-title{
+        width: 330px;
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    &-description{
+        line-height: 1.7;
+        color: $color-grey-dark-2;
+        margin-bottom: 10px;
+    }
+    &-image{
+        width: calc(100% + 15px);
+        margin: 0 auto;
+        margin-bottom: 15px;
+    }
+    
+}
+.read-more{
+  text-align: end;
+  transition:color .3s ease;
+  &:hover{
+    color: $color-primary;
+  }
+}
+.author{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    &-logo{
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+    }
+}
+.date{
+    color: $color-grey-light-2;
+}

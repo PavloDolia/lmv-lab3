@@ -1,0 +1,33 @@
+.navigation{
+    position: sticky;
+    padding: 2rem 3rem;
+    background-color: $color-white;
+    min-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &__logo{
+        max-width: 400px;
+        max-height: 40px;
+    }
+    &__list{
+        list-style: none;
+        display: flex;
+        gap:20px;
+       
+    }
+    &__item{
+        transition: color .3s ease-in;
+        &:hover,&:active{
+            color: $color-primary;
+        }
+        &--active{
+            color:$color-primary;
+            filter: brightness(.8);
+        }
+    }
+    &__side{
+        display: flex;
+        gap:20px
+    }
+}

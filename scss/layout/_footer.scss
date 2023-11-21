@@ -1,0 +1,35 @@
+.footer{
+    @include container;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    color:$color-grey-light-2;
+    background-color: $color-black;
+    &-left,&-right{
+        width: 30%;
+    }
+    &-description{
+        margin-top: 20px;
+        line-height: 1.5;
+    }
+    &__title{
+        font-size: 22px;
+        margin-bottom: 30px;
+    }
+    &__list{
+        display: flex;
+        gap: 25px;
+        flex-direction: column;
+    }
+    &__item{
+        display: flex;
+        align-items: end;
+        gap: 5px;
+
+        &-icon{
+            width: 18px;
+            height: 18px;
+        }
+    }
+}

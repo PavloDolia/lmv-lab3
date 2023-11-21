@@ -1,27 +1,21 @@
-@import '_reset';
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
-:root {
-  --main-color: #942404;
-  --secondary-color: #343434;
+.container{
+ width: 100vw;
+ height: 100vh;
+ background-color: #f2f2f2;
+ display: flex;
+ align-items: center;
+ justify-content: center;
 }
-
-body {
-  font-family: 'Roboto';
-  background-color: #f2f2f2;
-  color: var(--secondary-color);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-a {
+.form__home{
   text-decoration: none;
 
   &:hover {
     text-decoration: underline;
   }
 }
+ 
 
 .wrapper {
   max-width: 976px;
@@ -106,7 +100,7 @@ a {
     margin-bottom: 15px;
 
     &::placeholder {
-      color: var(--secondary-color);
+      color: $color-black;
       font-size: 18px;
     }
   }
@@ -116,7 +110,7 @@ a {
     margin-bottom: 12px;
 
     a {
-      color: var(--main-color);
+      color: $color-primary;
     }
   }
 
@@ -156,19 +150,19 @@ a {
     margin-bottom: 75px;
     font-size: 20px;
     width: 100%;
-    background-color: var(--main-color);
+    background-color: $color-primary;
     color: #fff;
     border-radius: 5px;
     text-align: center;
     transition: 0.3s all ease;
 
     &:hover {
-      background-color: #bc310b;
+      filter: brightness(1.1);
     }
   }
 
   &__switch-page {
-    color: var(--secondary-color);
+    color: $color-black;
     text-align: center;
 
     &_l {
@@ -179,7 +173,10 @@ a {
     }
 
     a {
-      color: var(--main-color);
+      color: $color-primary;
+      &:hover{
+        text-decoration: underline;
+      }
     }
   }
 }
