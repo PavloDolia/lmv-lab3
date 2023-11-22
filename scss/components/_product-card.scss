@@ -1,0 +1,45 @@
+.product{
+    @include container;
+    &__card{
+      background-color: #fdfdfd;
+        flex: 0 0 30%;
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+
+        width: 20%;
+        padding:20px;
+        border-radius: 5px;
+        box-shadow:5px 8px 4px rgba(0, 0, 0, 0.25);    
+    }
+    &__image{
+        align-self: center;
+        width:90%;
+        border-radius: 5px;
+        margin-bottom: 15px;
+    }
+    &__name{}
+    &__bottom{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+    }
+    &__price{}
+    &__button{
+        position: relative;
+        &::before{
+            content: "";
+            position: absolute;
+            background-image: url(../../img/shopping-cart-icon.png);
+            background-size: contain;
+            background-repeat:no-repeat ;
+            width: 14px;
+            height: 14px;
+            top: 0;
+            left: -18px;
+            z-index: 3;
+        }
+        color:$color-primary;
+    }
+}

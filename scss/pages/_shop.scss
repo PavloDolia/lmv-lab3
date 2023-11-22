@@ -1,0 +1,10 @@
+.products{
+    @include container;
+    padding: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    margin-bottom: 90px;
+}
